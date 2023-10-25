@@ -36,8 +36,8 @@ const App = () => {
             height: 200, 
             backgroundColor: 'red'
           }}></View>
-          <Text>Teh oolong</Text>
-          <Text>Rp.5000</Text>
+          <Text>Nasi goreng</Text>
+          <Text>Rp.15000</Text>
           </View>
           <View style={{
             borderWidth: 1,
