@@ -6,7 +6,7 @@ const Home = () => {
     Alert.alert('Pinjam dulu seratus')
   }
   return (
-    <View>
+    <View style={{backgroundColor: '#CB6B6B'}}>
       <View style={{ borderWidth: 1, 
       flexDirection: 'row', 
       justifyContent: 'space-between', 
@@ -31,6 +31,9 @@ const Home = () => {
         Kantin Multistudi
       </Text>
 
+      <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
+        Menu Makanan
+      </Text>
       <View style={{flexDirection: 'row'}}>
           <View style={{
             borderWidth: 1,
@@ -42,7 +45,7 @@ const Home = () => {
           style={{height: 140, width: 158, marginHorizontal: 16, borderRadius: 12}}
           source={require('../assets/Images/nasigoreng.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi goreng</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.15000</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight:'bold', color: 'red'}}>Rp.15000</Text>
           </View>
           <View style={{
             borderWidth: 1,
@@ -54,9 +57,13 @@ const Home = () => {
           style={{height: 140, width: 140, marginHorizontal: 16, borderRadius: 12}}
           source={require('../assets/Images/nasikuning.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi kuning</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.10000</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.10000</Text>
           </View>
         </View>
+
+        <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
+        Menu Minuman
+        </Text>
         <View style={{flexDirection: 'row'}}>
           <View style={{
             borderWidth: 1,
@@ -68,7 +75,7 @@ const Home = () => {
           style={{height: 140, width: 158, marginHorizontal: 16, borderRadius: 12}}
           source={require('../assets/Images/tehmanis.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Teh obeng</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.5000</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.5000</Text>
           </View>
           <View style={{
             borderWidth: 1,
@@ -80,7 +87,7 @@ const Home = () => {
           style={{height: 140, width: 140, marginHorizontal: 16, borderRadius: 12}}
           source={require('../assets/Images/tehtarik.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Teh tarik</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.10000</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.10000</Text>
           </View>
           </View>
       
