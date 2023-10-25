@@ -36,8 +36,8 @@ const App = () => {
             height: 200, 
             backgroundColor: 'red'
           }}></View>
-          <Text>Nasi goreng</Text>
-          <Text>Rp.15000</Text>
+          <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi goreng</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.15000</Text>
           </View>
           <View style={{
             borderWidth: 1,
@@ -49,8 +49,8 @@ const App = () => {
             height: 200, 
             backgroundColor: 'red'
           }}></View>
-          <Text>Nasi Kuning</Text>
-          <Text>Rp.10.000</Text>
+          <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi kuning</Text>
+          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, color: 'red'}}>Rp.10000</Text>
           </View>
           </View>
       
