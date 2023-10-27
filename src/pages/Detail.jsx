@@ -23,6 +23,7 @@ const detail = () => {
       <Text style={{
         fontSize:12,
         marginHorizontal:45,
+        marginTop:20,
         color:'#A4A4A4'
       }}>
       Terbuat dari beras pilihan terbaik yang diolah
@@ -35,6 +36,7 @@ const detail = () => {
         marginTop:10
       }}>
       </View>
+      
 
       <View>
         <TextInput style= {{
@@ -45,7 +47,7 @@ const detail = () => {
             marginTop:20,
             alignItem:'center',
             marginHorizontal:40
-        }} placeholder='Menu tambahan'>
+        }} placeholder='Masukan jumlah makanan'>
         </TextInput>
       </View>
 
@@ -53,13 +55,20 @@ const detail = () => {
         <View style= {{
             borderWidth:1,
             height: 40,
-            borderRadius:30,
+            borderRadius:40,
             backgroundColor:'red',
             width:350,
-            marginTop:20,
-            alignItem:'center',
+            marginTop:180,
             marginHorizontal:40
-        }} placeholder='Menu tambahan'>
+        }}>
+
+          <Text style = {{
+            textAlign: 'center',
+            marginTop: 8,
+            color : 'rgb(255,255,255)'
+          }}>
+            Konfirmasi Pemesanan
+          </Text>
         </View>
       </TouchableOpacity>
     </View>
