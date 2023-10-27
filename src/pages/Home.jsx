@@ -18,51 +18,21 @@ const Home = () => {
       padding: 16,
       borderRadius: 40
       }}>
-    <Image resizeMode='contain' style={{height: 40, width: 150}}
-    source={require('../assets/Images/logomhs.png')}/>
-    <View style={{height:40, width:40, borderRadius: 20, backgroundColor: 'white'}}>
+        <Image resizeMode='contain' style={{height: 40, width: 150}}
+        source={require('../assets/Images/logomhs.png')}/>
+        <Image resizeMode='contain' 
+              style={{height: 30, width: 30, marginHorizontal: 16, borderRadius: 12}}
+              source={require('../assets/Images/menu.png')}/>
 
-    </View>
-    </View>
-      <Text style={{marginTop: 12, fontSize: 12, marginHorizontal: 16, color: '#000000'}}>
-        Selamat Datang di
-      </Text>
-      <Text style={{marginTop: 4, fontSize: 32, marginHorizontal: 16, color: '#000000'}}>
-        Kantin Multistudi
-      </Text>
-
-      <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
-        Menu Makanan
-      </Text>
-      <View style={{flexDirection: 'row'}}>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-            marginTop:16
-          }}>
-          <Image resizeMode='contain' 
-          style={{height: 140, width: 158, marginHorizontal: 16, borderRadius: 12}}
-          source={require('../assets/Images/nasigoreng.jpg')}/>
-          <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi goreng</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight:'bold', color: 'red'}}>Rp.15000</Text>
-          </View>
-          <View style={{
-            borderWidth: 1,
-            padding: 12,
-            flex:1,
-            marginTop:16
-          }}>
-          <Image resizeMode='contain' 
-          style={{height: 140, width: 140, marginHorizontal: 16, borderRadius: 12}}
-          source={require('../assets/Images/nasikuning.jpg')}/>
-          <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi kuning</Text>
-          <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.10000</Text>
-          </View>
         </View>
-
+        <Text style={{marginTop: 12, fontSize: 12, marginHorizontal: 16, color: '#000000'}}>
+        Selamat Datang di
+        </Text>
+        <Text style={{marginTop: 4, fontSize: 32, marginHorizontal: 16, color: '#000000'}}>
+        Kantin Multistudi
+        </Text>
         <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
-        Menu Minuman
+        Menu Makanan
         </Text>
         <View style={{flexDirection: 'row'}}>
           <View style={{
@@ -70,10 +40,40 @@ const Home = () => {
             padding: 12,
             flex:1,
             marginTop:16
-          }}>
+            }}>
+              <Image resizeMode='contain' 
+              style={{height: 180, width: 180, marginHorizontal: 16, borderRadius: 12}}
+              source={require('../assets/Images/nasigorengpin.jpg')}/>
+              <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi goreng</Text>
+              <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight:'bold', color: 'red'}}>Rp.15000</Text>
+              </View>
+              <View style={{
+                borderWidth: 1,
+                padding: 12,
+                flex:1,
+                marginTop:16
+                }}>
+                  <Image resizeMode='contain' 
+                  style={{height: 180, width: 180, marginHorizontal: 16, borderRadius: 12}}
+                  source={require('../assets/Images/nasikuningpin.jpg')}/>
+                  <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi kuning</Text>
+                  <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.10000</Text>
+                  </View>
+                  </View>
+                
+                <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
+                  Menu Minuman
+                  </Text>
+                  <View style={{flexDirection: 'row'}}>
+                    <View style={{
+                      borderWidth: 1,
+                      padding: 12,
+                      flex:1,
+                      marginTop:16
+                      }}>
           <Image resizeMode='contain' 
-          style={{height: 140, width: 158, marginHorizontal: 16, borderRadius: 12}}
-          source={require('../assets/Images/tehmanis.jpg')}/>
+          style={{height: 200, width: 180, marginHorizontal: 16, borderRadius: 12}}
+          source={require('../assets/Images/tehobeng.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Teh obeng</Text>
           <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.5000</Text>
           </View>
@@ -84,8 +84,8 @@ const Home = () => {
             marginTop:16
           }}>
           <Image resizeMode='contain' 
-          style={{height: 140, width: 140, marginHorizontal: 16, borderRadius: 12}}
-          source={require('../assets/Images/tehtarik.jpg')}/>
+          style={{height: 200, width: 180, marginHorizontal: 16, borderRadius: 12}}
+          source={require('../assets/Images/tehtarikpin.jpg')}/>
           <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Teh tarik</Text>
           <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.10000</Text>
           </View>
