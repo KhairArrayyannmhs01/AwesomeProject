@@ -1,10 +1,7 @@
 import {Text, TouchableOpacity, View, ScrollView, TextInput, Image, TouchableWithoutFeedback, Alert} from 'react-native';
 import React from 'react';
 
-const Home = () => {
-  const onKlikTombol = () => {
-    Alert.alert('Pinjam dulu seratus')
-  }
+const Home = ({navigation}) => {
   return (
     <View style={{backgroundColor: '#CB6B6B'}}>
       <View style={{ borderWidth: 1, 
@@ -21,22 +18,25 @@ const Home = () => {
         <Image resizeMode='contain' style={{height: 40, width: 150}}
         source={require('../assets/Images/logomhs.png')}/>
         <Image resizeMode='contain' 
-              style={{height: 30, width: 30, marginHorizontal: 16, borderRadius: 12}}
+              style={{height: 30, width: 30, margin: 10, borderRadius: 12}}
               source={require('../assets/Images/menu.png')}/>
 
         </View>
         <Text style={{marginTop: 12, fontSize: 12, marginHorizontal: 16, color: '#000000'}}>
         Selamat Datang di
         </Text>
-        <Text style={{marginTop: 4, fontSize: 32, marginHorizontal: 16, color: '#000000'}}>
+        <Text style={{marginTop: 4, fontSize: 32, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
         Kantin Multistudi
         </Text>
-        <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
+        <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, marginBottom: -20, fontWeight: 'bold', color: '#000000'}}>
         Menu Makanan
         </Text>
-        <View style={{flexDirection: 'row'}}>
-          <View style={{
-            borderWidth: 1,
+        <View 
+        style={{
+          flexDirection: 'row'
+          }}>
+          <TouchableOpacity onPress={() => navigation.navigate('Detail')}
+          style={{
             padding: 12,
             flex:1,
             marginTop:16
@@ -46,9 +46,8 @@ const Home = () => {
               source={require('../assets/Images/nasigorengpin.jpg')}/>
               <Text style={{marginTop: 12, fontSize: 16, marginHorizontal: 16, fontWeight: 'bold', color: 'black'}}>Nasi goreng</Text>
               <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight:'bold', color: 'red'}}>Rp.15000</Text>
-              </View>
+          </TouchableOpacity>
               <View style={{
-                borderWidth: 1,
                 padding: 12,
                 flex:1,
                 marginTop:16
@@ -61,12 +60,11 @@ const Home = () => {
                   </View>
                   </View>
                 
-                <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, fontWeight: 'bold', color: '#000000'}}>
+                <Text style={{marginTop: 12, fontSize: 20, marginHorizontal: 16, marginBottom: -20, fontWeight: 'bold', color: '#000000'}}>
                   Menu Minuman
                   </Text>
                   <View style={{flexDirection: 'row'}}>
                     <View style={{
-                      borderWidth: 1,
                       padding: 12,
                       flex:1,
                       marginTop:16
@@ -78,7 +76,6 @@ const Home = () => {
           <Text style={{marginTop: 4, fontSize: 14, marginHorizontal: 16, fontWeight: 'bold', color: 'red'}}>Rp.5000</Text>
           </View>
           <View style={{
-            borderWidth: 1,
             padding: 12,
             flex:1,
             marginTop:16

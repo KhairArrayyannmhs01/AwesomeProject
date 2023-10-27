@@ -1,16 +1,24 @@
 import {Text, TouchableOpacity, View, ScrollView, TextInput, Image, TouchableWithoutFeedback, Alert} from 'react-native';
 import React from 'react';
 import Home from './src/pages/Home';
+import Detail from './src/pages/Detail';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View>
-      <Home/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Detail" component={Detail} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
     
 
   );
 };
 
-export default App
+export default App;
